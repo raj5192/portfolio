@@ -1,0 +1,269 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #dadada;
+  scroll-behavior: smooth;
+}
+.picture {
+  background-image: url(../assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+ .navbar {
+  padding: 0px 20px;
+}
+ul{
+  margin-left: 30px;
+}
+
+.icon-xs {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.too-bold {
+  font-weight: 800;
+}
+
+.light-text {
+  color: #748182;
+}
+.progress {
+  height: 25px;
+}
+
+.icon-sm {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.text {
+  font-size: 20px;
+  line-height: 25px;
+}
+.card-hover:hover .icon-sm {
+  background-color: black !important;
+  color: white;
+}
+.w-100 {
+  width: 100%;
+}
+.img-overlay {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  right: 15px;
+  bottom: 5px;
+  opacity: 0;
+  background-color: white;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.img-overlay:hover {
+  opacity: 1;
+}
+.content-icon {
+  background-color: black;
+  color: white;
+  width: 28px;
+  height: 28px;
+  transition: all 0.5s;
+  border: solid 1px black;
+}
+.content-icon:hover {
+  background-color: white;
+  color: black;
+}
+/* .w-10 {
+  width: 10%;
+} */
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+  background-color: #748182 !important;
+}
+.bg-dark-color {
+  background-color: #5a5a5a;
+}
+#team img {
+  transition: all 0.3s;
+}
+#team img:hover {
+  transform: scale(1.1);
+}
+.img-overlay-team {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  right: 15px;
+  bottom: 105px;
+  opacity: 0;
+  transform: rotateY(180deg);
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.5s;
+  z-index: 2;
+}
+.team-icon {
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* .team-icon:hover {
+  background-color: white;
+  color: black;
+} */
+#team .card:hover .img-overlay-team {
+  opacity: 1;
+  transform: rotateY(0);
+}
+#team img {
+  transition: all 0.3s;
+}
+#team .card:hover img {
+  transform: scale(1.1);
+}
+.icon {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transition: all 0.5s;
+  width: 55px;
+  height: 55px;
+  background-color: #eaeaeb;
+  cursor: pointer;
+}
+.icon-hover:hover .icon {
+  background-color: black;
+  color: white;
+}
+input {
+  background-color: #eaeaeb;
+  border: none;
+  border-radius: 5px;
+  color: #484d4d;
+  height: 40px;
+  outline: none;
+  padding: 15px;
+  margin-top: 15px;
+}
+textarea {
+  background-color: #eaeaeb;
+  border: none;
+  border-radius: 5px;
+  color: #484d4d;
+  outline: none;
+  padding: 15px;
+}
+
+.color {
+  color: #0197f6;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  font-size: xx-large;
+}
+.fa-brands:hover {
+  color: #0197f6;
+  transition: all 0.45s ease;
+}
+nav {
+  background-color: #282c2d;
+  border-bottom: 1px solid #dadada;
+}
+
+.custom-icon {
+  display: inline-block;
+  vertical-align: middle;
+  stroke: #0197f6;
+}
+
+.full-image {
+  background-color: #272727 !important;
+}
+.background-image {
+  background-image: url(../assets/libarary.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.py-5 {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+
+.progress-bar {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.click-hover:hover {
+  background-color: #0197f6 !important;
+  color: black !important;
+  transition: 0.45s ease !important;
+}
+.nav-link:hover {
+  color: #0197f6 !important;
+}
+.collapse a {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #0197f6;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 1px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.click-hover-btn {
+  background-color: #0197f6 !important;
+  color: #000;
+}
+.click-hover-btn:hover {
+  background-color: transparent !important;
+  transition: 1s ease !important;
+}
+.click-hover-yellow:hover {
+  background-color: #0197f6 !important;
+}
+.margin {
+  padding: 50px 0px;
+}
+
